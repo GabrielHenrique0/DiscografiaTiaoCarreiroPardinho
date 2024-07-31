@@ -1,0 +1,78 @@
+html {
+  background-color: #882fa0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 5vw;
+  height: auto;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #FE5536;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+}
+
+.App-nav {
+  display: flex;
+  align-items: center;
+}
+
+.App-nav .App-logo {
+  width: 3vw; /* Logo responsiva */
+  height: auto;
+  margin-right: 10px;
+}
+
+.App-nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.input {
+  border-radius: 20px;
+}
+
+/* Seção de responsividade */
+@media (max-width: 768px) {
+  .App-nav .App-logo {
+    width: 10vw; /* Ajuste para telas menores */
+  }
+
+  .App-nav h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-nav .App-logo {
+    width: 15vw; /* Ajuste para telas muito pequenas */
+  }
+
+  .App-nav h1 {
+    font-size: 1rem;
+  }
+}
